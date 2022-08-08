@@ -1,0 +1,206 @@
+*, html, body, h1, h2, h3, h4, h5, h6, a, img, ul, ol, li, div, span, b, time, mark,
+u, p, input, label, textarea, select, option {	
+												color: var(--text_color);
+                                            	font-family: paganini, sans-serif;
+												font-size: 1px;
+												line-height: 1.5;
+												font-weight: 200;
+												font-style: normal;
+                      							margin: 0;
+                      							padding: 0;
+                      							position: relative;
+                      							border: 0;
+                      							vertical-align: top;
+                      							z-index: auto;
+                                            	box-sizing: border-box; 
+                                            	transition: 1s ease-in-out;
+                                            }												  			  										
+
+html, 
+body {	
+	width: 100%;
+	height: 100%;
+	background-color: #282b2f;
+}
+
+#main_page {
+	max-height: fit-content;
+	overflow: hidden;
+}
+
+svg * {
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.all {
+	width: fit-content;
+	margin: auto;
+	padding-top: 5vh;
+}
+
+.body {
+	z-index: 1;
+}
+
+.body svg {
+	height: 90vh;
+}
+
+.body svg path {
+	fill: #000000;
+	stroke-width: 1px;
+	stroke: rgba(255, 0, 0, 0.5);
+}
+
+.tunes {
+	position: absolute;
+	z-index: 0;
+	top: 5vh;
+}
+
+.tunes.left {
+	left: -6.8vh;
+}
+
+.tunes.right {
+	right:  -6.8vh;
+}
+
+.tunes.left .tune {
+	transform: rotate(180deg);
+	text-align: right;
+}
+
+.tune.tune_1 {
+	right: 1vh;
+}
+.tune.tune_2 {
+	right: 0.4vh;
+}
+.tune.tune_5 {
+	left: 0.4vh;
+}
+.tune.tune_6 {
+	left: 1vh;
+}
+
+.tune svg {
+	height: 8.9vh;
+}
+
+.tune svg {
+	fill: black;
+}
+
+.tune.tune_on svg {
+	fill: yellow;
+}
+
+.tune.top {
+	top: 12.6vh;
+}
+
+.tune.middle {
+	top: 20.7vh;
+}
+
+.tune.bottom {
+	top: 28.6vh;
+}
+
+.strings {
+	position: absolute;
+	top: 5vh;
+	z-index: 9;
+}
+
+.strings.left {
+	left: 7vh;
+}
+
+.strings.right {
+	right:  7vh;
+}
+
+.strings .string {
+	position: absolute;
+}
+
+.strings.left .string {
+	transform: rotateY(180deg);
+	left: 0;
+}
+
+.strings.right .string {
+	right: 0;
+}
+
+.string.top {
+	top: 15.2vh;
+}
+
+.string.middle {
+	top: 32.2vh;
+}
+
+.string.bottom {
+	top: 49vh;
+}
+
+.strings svg {
+	padding: 0.1vh;
+}
+
+.strings [class*="string_"] svg * {
+	fill: none;
+	stroke: red;
+}
+
+.strings [class*="string_"] svg circle {
+	r:  7px;
+}
+
+.strings .string_4 svg,
+.strings .string_3 svg {
+	height: 76vh;
+}
+
+.strings .string_5 svg,
+.strings .string_2 svg {
+	height: 59.5vh;
+}
+
+.strings .string_6 svg,
+.strings .string_1 svg {
+	height: 42vh;
+}
+
+.strings .string_1 svg * {
+	stroke-width:  0.5;
+}
+.strings .string_2 svg * {
+	stroke-width:  0.6;
+}
+.strings .string_3 svg * {
+	stroke-width:  0.7;
+}
+.strings .string_4 svg * {
+	stroke-width:  0.8;
+}
+.strings .string_5 svg * {
+	stroke-width:  0.9;
+}
+.strings .string_6 svg * {
+	stroke-width:  1;
+}
+
+.strings .string_on svg * {
+	stroke-width:  2.5;
+	stroke: yellow;
+}
+
+.strings .string_on svg circle {
+	r: 6.2px;
+	transform: translateX(-0.2vh);
+}
